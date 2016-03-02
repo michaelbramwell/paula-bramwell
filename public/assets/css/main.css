@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("/assets/fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: "OpenSans Semibold";
+  src: url("/assets/fonts/OpenSans-Semibold.ttf"); }
+@font-face {
+  font-family: "Vidaloka Regular";
+  src: url("/assets/fonts/Vidaloka-Regular.otf"); }
+h1 {
+  font-family: "Vidaloka Regular";
+  font-size: 40px; }
+
+h2 {
+  font-family: "OpenSans Semibold";
+  font-size: 24px; }
+  h2 span {
+    font-weight: normal; }
+
+a,
+a:hover,
+a:visited {
+  color: #575757;
+  text-decoration: none; }
+
+strong {
+  font-family: "OpenSans Semibold"; }
+
+html {
+  height: 100%; }
+  html body {
+    font-family: "OpenSans Light";
+    font-size: 18px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #fff;
+    color: #575757; }
+    html body header {
+      margin-top: 19px;
+      width: 100%;
+      height: 270px;
+      border-bottom: solid 11px #C7CAC3; }
+      html body header .wrapper #logo {
+        width: 392px;
+        height: 226px;
+        background-image: url(/assets/images/paula-bramwell-enlighten-empower-evolve.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-left: calc(50% - 319px);
+        vertical-align: text-bottom; }
+      html body header .wrapper ul {
+        padding: 0;
+        margin: 0 0 0 21px;
+        display: inline-block; }
+        html body header .wrapper ul li {
+          margin: 0;
+          padding: 0;
+          display: inline-block; }
+    html body section {
+      border-bottom: solid 31px #C7CAC3;
+      padding: 59px 0; }
+      html body section .wrapper {
+        margin: 0 auto;
+        width: 90%; }
+        html body section .wrapper #portrait {
+          display: inline-block;
+          width: 348px;
+          height: 345px;
+          background-image: url(/assets/images/paula-bramwell.jpg);
+          background-repeat: no-repeat; }
+        html body section .wrapper #content {
+          display: inline-block;
+          width: 60%;
+          margin-left: 23px;
+          vertical-align: top; }
+    html body footer {
+      width: 100%;
+      height: 60px;
+      border-top: solid 1px #C7CAC3;
+      margin: 7px 0 31px 0; }
+      html body footer ul {
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+        html body footer ul li {
+          padding: 0 0 0 2px;
+          margin: 17px 0;
+          display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */
