@@ -9,11 +9,13 @@
   src: url("/assets/fonts/Vidaloka-Regular.otf"); }
 h1 {
   font-family: "Vidaloka Regular";
-  font-size: 40px; }
+  font-size: 40px;
+  margin-bottom: 0; }
 
 h2 {
   font-family: "OpenSans Semibold";
-  font-size: 24px; }
+  font-size: 24px;
+  margin-top: 0; }
   h2 span {
     font-weight: normal; }
 
@@ -42,15 +44,16 @@ html {
       border-bottom: solid 11px #C7CAC3; }
       html body header .wrapper #logo {
         width: 392px;
-        height: 226px;
+        height: 100%;
         background-image: url(/assets/images/paula-bramwell-enlighten-empower-evolve.png);
         background-repeat: no-repeat;
+        background-size: contain;
         display: inline-block;
         margin-left: calc(50% - 319px);
         vertical-align: text-bottom; }
       html body header .wrapper ul {
-        padding: 0;
-        margin: 0 0 0 21px;
+        padding: 0 0 30px 0;
+        margin: 0 0 0 0;
         display: inline-block; }
         html body header .wrapper ul li {
           margin: 0;
@@ -58,7 +61,7 @@ html {
           display: inline-block; }
     html body section {
       border-bottom: solid 31px #C7CAC3;
-      padding: 59px 0; }
+      padding: 49px 0; }
       html body section .wrapper {
         margin: 0 auto;
         width: 90%; }
@@ -67,6 +70,7 @@ html {
           width: 348px;
           height: 345px;
           background-image: url(/assets/images/paula-bramwell.jpg);
+          background-size: contain;
           background-repeat: no-repeat; }
         html body section .wrapper #content {
           display: inline-block;
@@ -79,12 +83,46 @@ html {
       border-top: solid 1px #C7CAC3;
       margin: 7px 0 31px 0; }
       html body footer ul {
-        margin: 0;
+        margin: 17px 0 0 0;
         padding: 0;
         text-align: center; }
         html body footer ul li {
           padding: 0 0 0 2px;
-          margin: 17px 0;
+          margin: 3px 0;
           display: inline-block; }
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    font-size: 30px; }
+
+  h2 {
+    font-size: 18px; }
+
+  html body {
+    font-size: 90%; }
+    html body header {
+      height: 205px; }
+    html body section .wrapper #portrait {
+      width: 300px; } }
+@media only screen and (max-width: 911px) {
+  html body header .wrapper {
+    margin-left: calc(50% - 203px); }
+    html body header .wrapper #logo {
+      margin-left: calc(50% - 207px); }
+  html body section .wrapper #portrait {
+    background-size: 261px; }
+  html body section .wrapper #content {
+    width: 54%;
+    margin-left: 0; } }
+@media only screen and (max-width: 735px) {
+  html body header .wrapper {
+    margin-left: calc(50% - 203px); }
+    html body header .wrapper #logo {
+      margin-left: calc(50% - 207px); }
+  html body section .wrapper #portrait {
+    display: none; }
+  html body section .wrapper #content {
+    width: 100%;
+    margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */
