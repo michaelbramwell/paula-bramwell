@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="utf-8" /> 
 		<title>Paula Bramwell, Clinical Psychologist : enlighten - empower - evolve</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css">
@@ -24,14 +25,18 @@
 					<h2>Clinical Psychologist | <span>BA (Hons) MPsych (Clinical)</span></h2>
 					<p>I will help you to explore and resolve problems connected with:</p>
 					<ul>
-						<li>Feeling persistantly low (depression)</li>
-						<li>Feeling anxious about life in general (anxiety)</li>
-						<li>Feeling...(OCD)</li>
+						<li>feeling persistently down, depressed, tired, worthless, guilty and hopeless <strong>(depression)</strong></li>
+						<li>feeling anxious in social situations and being fearful that others will judge you negatively – whether it’s public speaking or simply dining out <strong>(social phobia)</strong></li>
+						<li>panic attacks and fear of situations where panic may occur or where escape might be difficult such as planes, movie theatres, shopping centres, driving or catching trains or buses <strong>(panic disorder with/without agoraphobia)</strong>)</li>
+						<li>drug and alcohol use and addictions</li>
+						<li>feelings of loss and grief</li>
+ 						<li>troubling memories about things from your past <strong>(trauma or abuse)</strong></li>
+						<li>flashbacks or trauma which can occur after experiencing or witnessing something distressing like when someone is badly hurt, for example in an accident <strong>(post traumatic stress disorder or acute stress disorder)</strong></li>
+						<li>anger and problems it can cause in your relationships with family, at work and in day-to-day interactions.</li> 
 					</ul>
-					<p>I completed my Masters in Clinical Psychology in 2006, and am a registered Clinical Psychologist.</p>
-					<p>I work with adults, adolescents and children. I help people to overcome complex issues including mild to chronic drug and alcohol abuse, self harm mood disorders, trauma, family discord, relationship difficulties, anger and stress.</p>
-					<p>I approach our conversations with empathy, warmth and understanding, and use the evidence based interventions to explore and help you resolve challenges to your mental health. I provide a space where you can safely explore and understand difficult experiences, thoughts and feelings.</p>
-					<p><strong>I will work together with you to help you realise your goals.</strong></p>
+					<p>I completed my Masters in Clinical Psychology in 2006, and am a registered Clinical Psychologist. I help adults, adolescents and children (from the age of fourteen and up) to overcome complex issues.</p>
+					<p>I approach our conversations with empathy, warmth and understanding, and use evidence-based interventions to help you resolve challenges to your mental health. I provide a space where you can safely explore and understand difficult experiences, thoughts and feelings.</p>
+					<p>I will work together with you to help you realise your goals.</p>
 				</div>
 			</div>
 		</section>
@@ -51,7 +56,15 @@
 		</footer>
 		<script type="text/javascript">
 			(function(){
-			 	var portrait = new Image();
+			 	var logo = new Image();
+				logo.onload = function(){
+					var image = document.getElementById("logo");
+					image.style.backgroundImage = "url(" + this.src + ")";	
+					image.className = "fade";	
+				};
+				logo.src = "/assets/images/paula-bramwell-enlighten-empower-evolve.png";
+
+				var portrait = new Image();
 				portrait.onload = function(){
 					var image = document.getElementById("portrait");
 					image.style.backgroundImage = "url(" + this.src + ")";	

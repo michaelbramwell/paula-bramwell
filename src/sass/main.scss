@@ -7,25 +7,51 @@ $full: 100%;
 $center: 0 auto;
 $inlineBlock: inline-block;
 
-@font-face {
-	font-family: "OpenSans Light";
-	src: url("/assets/fonts/OpenSans-Light.ttf");
-}
 
 @font-face {
-	font-family: "OpenSans Semibold";
-	src: url("/assets/fonts/OpenSans-Semibold.ttf");
+    font-family: 'OpenSans Light';
+    src: url('/assets/fonts/opensans-light-webfont.eot');
+    src: url('/assets/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/opensans-light-webfont.woff') format('woff'),
+         url('/assets/fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('/assets/fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+
 @font-face {
-	font-family: "Vidaloka Regular";
-	src: url("/assets/fonts/Vidaloka-Regular.otf");
+    font-family: 'OpenSans Semibold';
+    src: url('/assets/fonts/opensans-semibold-webfont.eot');
+    src: url('/assets/fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('/assets/fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Vidaloka Regular';
+    src: url('/assets/fonts/vidaloka-regular-webfont.eot');
+    src: url('/assets/fonts/vidaloka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/vidaloka-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/vidaloka-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/vidaloka-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/vidaloka-regular-webfont.svg#vidaloka_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1 {
 	font-family: "Vidaloka Regular";
 	font-size: 40px;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 h2 {
@@ -71,11 +97,16 @@ html {
 				#logo {
 					width: 392px;
 					height: 84%;
-					background-image: url(/assets/images/paula-bramwell-enlighten-empower-evolve.png);
 					background-repeat: no-repeat;
 					background-size: contain;
 					display: $inlineBlock;
 					margin-left: calc(50% - 319px);
+					opacity: 0;
+					transition: 300ms;
+
+					&.fade {
+						opacity: 1;
+					}
 				}
 
 				ul {
@@ -106,11 +137,10 @@ html {
 					display: $inlineBlock;
 					width: 348px;
 					height: 345px;
-					/* background-image: url(/assets/images/paula-bramwell.jpg); */
 					background-size: contain;
 					background-repeat: no-repeat;
 					opacity: 0;
-
+					transition: 300ms;
 					&.fade {
 						opacity: 1;
 					}
@@ -121,6 +151,13 @@ html {
 					width: 60%;
 					margin-left: 23px;
 					vertical-align: top;
+
+					ul {
+					
+						li {
+							padding: 3px 0;
+						}
+					}
 				}
 			}
 		}
@@ -235,7 +272,7 @@ html {
 			}
 
 			section {
-				padding: 0;
+				padding: 17px 0 0 0;
 				
 				.wrapper {
 					
