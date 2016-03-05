@@ -70,19 +70,19 @@ html {
 
 				#logo {
 					width: 392px;
-					height: 100%;
+					height: 84%;
 					background-image: url(/assets/images/paula-bramwell-enlighten-empower-evolve.png);
 					background-repeat: no-repeat;
 					background-size: contain;
 					display: $inlineBlock;
 					margin-left: calc(50% - 319px);
-					vertical-align: text-bottom;
 				}
 
 				ul {
-					padding: 0 0 30px 0;
-					margin: 0 0 0 0;
+					padding: 0 0 0 37px;
+					margin: 0;
 					display: $inlineBlock;
+					vertical-align: super;
 
 					li {
 						margin: 0;
@@ -106,9 +106,14 @@ html {
 					display: $inlineBlock;
 					width: 348px;
 					height: 345px;
-					background-image: url(/assets/images/paula-bramwell.jpg);
+					/* background-image: url(/assets/images/paula-bramwell.jpg); */
 					background-size: contain;
 					background-repeat: no-repeat;
+					opacity: 0;
+
+					&.fade {
+						opacity: 1;
+					}
 				}
 
 				#content {
@@ -180,15 +185,23 @@ html {
 			header {
 				
 				.wrapper {
-					margin-left: calc(50% - 203px);
 				
 					#logo {
-						margin-left: calc(50% - 207px);
+						width: 287px;
+						height: 89%;
+						margin-left: calc(50% - 160px);
+					}
+
+					ul {
+						padding: 0;
+						display: block;
+						text-align: center;
 					}
 				}
 			}
 
 			section {
+				padding: 37px 0 0 0;;
 				
 				.wrapper {
 					
@@ -209,19 +222,20 @@ html {
 	html {
 		
 		body {
-		
+			font-size: 83%;	
+
 			header {
 				
 				.wrapper {
-					margin-left: calc(50% - 203px);
 				
 					#logo {
-						margin-left: calc(50% - 207px);
+						margin-left: calc(50% - 163px);
 					}
 				}
 			}
 
 			section {
+				padding: 0;
 				
 				.wrapper {
 					

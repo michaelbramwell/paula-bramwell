@@ -49,6 +49,16 @@
 				<li>11 Hamilton Street, Subiaco WA 6008</li>
 			</ul>	
 		</footer>
-		<!-- <script type="text/javascript" src="/assets/js/main.js" async>-->
+		<script type="text/javascript">
+			(function(){
+			 	var portrait = new Image();
+				portrait.onload = function(){
+					var image = document.getElementById("portrait");
+					image.style.backgroundImage = "url(" + this.src + ")";	
+					image.className = "fade";	
+				};
+				portrait.src = "/assets/images/paula-bramwell.jpg";
+			 })();
+		</script>
 	</body>
 </html>
