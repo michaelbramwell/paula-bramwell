@@ -5,13 +5,13 @@ api_version: go1
 handlers:
 
 - url: /assets/images/
-  static_dir: images/
+  static_dir: assets/images
 
 - url: /assets/css/ 
-  static_dir: /assets/css
+  static_dir: assets/css
   
 - url: /assets/fonts/
-  static_dir: /assets/fonts
+  static_dir: assets/fonts
   
 - url: /.*
   script: _go_app
