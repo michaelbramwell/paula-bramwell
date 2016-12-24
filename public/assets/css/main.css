@@ -124,7 +124,7 @@ html {
             margin: 3px 0;
             display: inline-block; }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
   h1 {
     font-size: 30px; }
 
@@ -133,25 +133,22 @@ html {
 
   html body {
     font-size: 90%; }
-    html body header {
+    html body .base header {
       height: 205px; }
-    html body section .wrapper #portrait {
-      width: 300px; } }
+      html body .base header .wrapper #logo {
+        margin-left: calc(50% - 362px); } }
 @media only screen and (max-width: 911px) {
-  html body header .wrapper #logo {
-    width: 287px;
-    height: 89%;
-    margin-left: calc(50% - 160px); }
-  html body header .wrapper ul {
-    padding: 0;
-    display: block;
-    text-align: center; }
-  html body section {
+  html body .base header {
+    padding-bottom: 17px; }
+    html body .base header .wrapper #logo {
+      width: 287px;
+      margin-left: calc(50% - 160px); }
+    html body .base header .wrapper ul {
+      display: block;
+      text-align: center; }
+  html body .base section {
     padding: 37px 0 0 0; }
-    html body section .wrapper #portrait {
-      background-size: 261px; }
-    html body section .wrapper #content {
-      width: 54%;
+    html body .base section .wrapper #content {
       margin-left: 0; } }
 @media only screen and (max-width: 735px) {
   html body {
@@ -160,8 +157,6 @@ html {
       margin-left: calc(50% - 163px); }
     html body section {
       padding: 17px 0 0 0; }
-      html body section .wrapper #portrait {
-        display: none; }
       html body section .wrapper #content {
         width: 100%;
         margin-left: 0; } }

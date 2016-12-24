@@ -203,7 +203,7 @@ html {
 	}
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1024px) {
 	h1 {
 		font-size: 30px;
 	}
@@ -216,17 +216,16 @@ html {
 		body {
 			font-size: 90%;
 			
-			header {
-				height: 205px;
+			.base {
 				
-			}
-
-			section {
-				
-				.wrapper {
-			
-					#portrait {
-						width: 300px;
+				header {
+					height: 205px;	
+					
+					.wrapper {
+						
+						#logo {
+							margin-left: calc(50% - 362px);
+						}
 					}
 				}
 			}	
@@ -238,39 +237,35 @@ html {
 	html {
 		
 		body {
-			
-			header {
-				
-				.wrapper {
-				
-					#logo {
-						width: 287px;
-						height: 89%;
-						margin-left: calc(50% - 160px);
-					}
 
-					ul {
-						padding: 0;
-						display: block;
-						text-align: center;
+			.base {
+				header {
+					padding-bottom: 17px;
+
+					.wrapper {
+					
+						#logo {
+							width: 287px;
+							margin-left: calc(50% - 160px);
+						}
+
+						ul {
+							display: block;
+							text-align: center;
+						}
 					}
-				}
 			}
 
 			section {
 				padding: 37px 0 0 0;;
 				
 				.wrapper {
-					
-					#portrait {
-						background-size: 261px;
-					}		
 		
 					#content {
-						width: 54%;
 						margin-left: 0;
 					}
 				}
+			}
 			}
 		}
 	}
@@ -295,11 +290,7 @@ html {
 				padding: 17px 0 0 0;
 				
 				.wrapper {
-					
-					#portrait {
-						display: none;
-					}		
-		
+				
 					#content {
 						width: 100%;
 						margin-left: 0;
