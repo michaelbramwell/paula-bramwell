@@ -6,54 +6,55 @@
 		<link rel="stylesheet" href="/assets/css/main.css">
 	</head>
 	<body>
-		<header>
-			<div class="wrapper">
-				<div id="logo"></div>
-				<ul>
-					<li><a href="tel:0439432224">0439 432 224</a> | </li>
-					<li><a href="mailto:paula@paulabramwell.com.au">paula@paulabramwell.com.au</a></li>
-				</ul>
-			</wrapper>
-		</header>
-
-		<section>
-			<div class="wrapper">
-				<div id="portrait"></div>
-				
-				<div id="content">
-					<h1>Paula Bramwell</h1>
-					<h2>Clinical Psychologist | <span>BA (Hons) MPsych (Clinical)</span></h2>
-					<p>I will help you to explore and resolve problems connected with:</p>
+		<div id="bg"></div>
+		<div class="base">
+			<header>
+				<div class="wrapper">
+					<div id="logo"></div>
 					<ul>
-						<li>feeling persistently down, depressed, tired, worthless, guilty and hopeless <strong>(depression)</strong></li>
-						<li>feeling anxious in social situations and being fearful that others will judge you negatively – whether it’s public speaking or simply dining out <strong>(social phobia)</strong></li>
-						<li>panic attacks and fear of situations where panic may occur or where escape might be difficult such as planes, movie theatres, shopping centres, driving or catching trains or buses <strong>(panic disorder with/without agoraphobia)</strong>)</li>
-						<li>drug and alcohol use and addictions</li>
-						<li>feelings of loss and grief</li>
- 						<li>troubling memories about things from your past <strong>(trauma or abuse)</strong></li>
-						<li>flashbacks or trauma which can occur after experiencing or witnessing something distressing like when someone is badly hurt, for example in an accident <strong>(post traumatic stress disorder or acute stress disorder)</strong></li>
-						<li>anger and problems it can cause in your relationships with family, at work and in day-to-day interactions.</li> 
+						<li><a href="tel:0439432224">0439 432 224</a> | </li>
+						<li><a href="mailto:paula@paulabramwell.com.au">paula@paulabramwell.com.au</a></li>
 					</ul>
-					<p>I completed my Masters in Clinical Psychology in 2006, and am a registered Clinical Psychologist. I help adults, adolescents and children (from the age of fourteen and up) to overcome complex issues.</p>
-					<p>I approach our conversations with empathy, warmth and understanding, and use evidence-based interventions to help you resolve challenges to your mental health. I provide a space where you can safely explore and understand difficult experiences, thoughts and feelings.</p>
-					<p>I will work together with you to help you realise your goals.</p>
-				</div>
-			</div>
-		</section>
+				</wrapper>
+			</header>
 
-		<footer>
-			<ul>
-				<li><strong>Phone <a href="tel:0439432224">0439 432 224</a></strong></li>
-				<li>|</li>
-				<li>Fax 6161 1597</li>
-				<li>|</li>
-				<li><a href="mailto:paula@paulabramwell.com.au">paula@paulabramwell.com.au</a></li>
-				<li>|</li>
-				<li>paulabramwell.com.au</li>
-				<li>|</li>
-				<li>11 Hamilton Street, Subiaco WA 6008</li>
-			</ul>	
-		</footer>
+			<section>
+				<div class="wrapper">
+					<div id="content">
+						<h1>Paula Bramwell</h1>
+						<h2>Clinical Psychologist | <span>BA (Hons) MPsych (Clinical)</span></h2>
+						<p>I will help you to explore and resolve problems connected with:</p>
+						<ul>
+							<li>feeling persistently down, depressed, tired, worthless, guilty and hopeless <strong>(depression)</strong></li>
+							<li>feeling anxious in social situations and being fearful that others will judge you negatively – whether it’s public speaking or simply dining out <strong>(social phobia)</strong></li>
+							<li>panic attacks and fear of situations where panic may occur or where escape might be difficult such as planes, movie theatres, shopping centres, driving or catching trains or buses <strong>(panic disorder with/without agoraphobia)</strong>)</li>
+							<li>drug and alcohol use and addictions</li>
+							<li>feelings of loss and grief</li>
+							<li>troubling memories about things from your past <strong>(trauma or abuse)</strong></li>
+							<li>flashbacks or trauma which can occur after experiencing or witnessing something distressing like when someone is badly hurt, for example in an accident <strong>(post traumatic stress disorder or acute stress disorder)</strong></li>
+							<li>anger and problems it can cause in your relationships with family, at work and in day-to-day interactions.</li> 
+						</ul>
+						<p>I completed my Masters in Clinical Psychology in 2006, and am a registered Clinical Psychologist. I help adults, adolescents and children (from the age of fourteen and up) to overcome complex issues.</p>
+						<p>I approach our conversations with empathy, warmth and understanding, and use evidence-based interventions to help you resolve challenges to your mental health. I provide a space where you can safely explore and understand difficult experiences, thoughts and feelings.</p>
+						<p>I will work together with you to help you realise your goals.</p>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<ul>
+					<li><strong>Phone <a href="tel:0439432224">0439 432 224</a></strong></li>
+					<li>|</li>
+					<li>Fax 6161 1597</li>
+					<li>|</li>
+					<li><a href="mailto:paula@paulabramwell.com.au">paula@paulabramwell.com.au</a></li>
+					<li>|</li>
+					<li>paulabramwell.com.au</li>
+					<li>|</li>
+					<li>11 Hamilton Street, Subiaco WA 6008</li>
+				</ul>	
+			</footer>	
+		</div>
 		<script type="text/javascript">
 			(function(){
 			 	var logo = new Image();
@@ -64,13 +65,13 @@
 				};
 				logo.src = "/assets/images/paula-bramwell-enlighten-empower-evolve.png";
 
-				var portrait = new Image();
-				portrait.onload = function(){
-					var image = document.getElementById("portrait");
+				var bg = new Image();
+				bg.onload = function(){
+					var image = document.getElementById("bg");
 					image.style.backgroundImage = "url(" + this.src + ")";	
 					image.className = "fade";	
 				};
-				portrait.src = "/assets/images/paula-bramwell.jpg";
+				bg.src = "/assets/images/maple-leaves.jpg";
 			 })();
 		</script>
 	</body>

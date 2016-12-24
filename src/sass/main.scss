@@ -83,103 +83,123 @@ html {
 		font-size: 18px;
 		margin: $center;
 		height: $full;
-		background-color: $bgColor;
-		color: $text;
+		color: $text;		
 
-		header {
-			margin-top: 19px;
-			width: $full;
-			height: 270px;
-			border-bottom: solid 11px $dividerBgColor;
-			
-			.wrapper {
-
-				#logo {
-					width: 392px;
-					height: 84%;
-					background-repeat: no-repeat;
-					background-size: contain;
-					display: $inlineBlock;
-					margin-left: calc(50% - 319px);
-					opacity: 0;
-					transition: 300ms;
-
-					&.fade {
-						opacity: 1;
-					}
-				}
-
-				ul {
-					padding: 0 0 0 37px;
-					margin: 0;
-					display: $inlineBlock;
-					vertical-align: super;
-
-					li {
-						margin: 0;
-						padding: 0;
-						display: $inlineBlock;
-					}
-				}
-			}
+		#bg {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index:-1;
+			background-color: $bgColor;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
 		}
-		
 
-		section {
-			border-bottom: solid 31px $dividerBgColor;
-			padding: 49px 0;
-			
-			.wrapper {
-				margin: $center;
-				width: 90%;
+		.base {
+			background-color: rgba(255, 255, 255, 0.9);
+			margin: $center;
+			width: 80%;
+			border-radius: 12px;
 
-				#portrait {
-					display: $inlineBlock;
-					width: 348px;
-					height: 345px;
-					background-size: contain;
-					background-repeat: no-repeat;
-					opacity: 0;
-					transition: 300ms;
-					&.fade {
-						opacity: 1;
+			header {
+				margin-top: 19px;
+				width: $full;
+				height: 270px;
+				border-bottom: solid 11px $dividerBgColor;
+				
+				.wrapper {
+					padding-top: 15px;
+
+					#logo {
+						width: 392px;
+						height: 84%;
+						background-repeat: no-repeat;
+						background-size: contain;
+						display: $inlineBlock;
+						margin-left: calc(50% - 319px);
+						opacity: 0;
+						transition: 300ms;
+
+						&.fade {
+							opacity: 1;
+						}
 					}
-				}
-
-				#content {
-					display: $inlineBlock;
-					width: 60%;
-					margin-left: 23px;
-					vertical-align: top;
 
 					ul {
-					
+						padding: 0 0 0 37px;
+						margin: 0;
+						display: $inlineBlock;
+						vertical-align: super;
+
 						li {
-							padding: 3px 0;
+							margin: 0;
+							padding: 0;
+							display: $inlineBlock;
 						}
 					}
 				}
 			}
-		}
+			
 
-		footer {
-			width: $full;
-			height: 60px;
-			border-top: solid 1px $dividerBgColor;
-			margin: 7px 0 31px 0;
+			section {
+				border-bottom: solid 31px $dividerBgColor;
+				padding: 49px 0;
+				
+				.wrapper {
+					margin: $center;
+					width: 90%;
 
-			ul {
-				margin: 17px 0 0 0;
-				padding: 0;
-				text-align: center;
+					#portrait {
+						display: $inlineBlock;
+						width: 348px;
+						height: 345px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						opacity: 0;
+						transition: 300ms;
+						&.fade {
+							opacity: 1;
+						}
+					}
 
-				li {
-					padding: 0 0 0 2px;
-					margin: 3px 0;
-					display: inline-block;
+					#content {
+						//background-color: rgba(255, 255, 255, 0.7);
+						display: $inlineBlock;
+						margin-left: 23px;
+						vertical-align: top;
+
+						ul {
+						
+							li {
+								padding: 3px 0;
+							}
+						}
+					}
 				}
 			}
-		}
+
+			footer {
+				width: $full;
+				border-top: solid 1px $dividerBgColor;
+				margin: 7px 0 15px 0;
+				padding-bottom: 15px;
+
+				ul {
+					margin: 17px 0 0 0;
+					padding: 0;
+					text-align: center;
+
+					li {
+						padding: 0 0 0 2px;
+						margin: 3px 0;
+						display: inline-block;
+					}
+				}
+			}
+		}	
 	}
 }
 
