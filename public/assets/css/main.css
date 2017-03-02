@@ -88,6 +88,34 @@ html {
               margin: 0;
               padding: 0;
               display: inline-block; }
+      html body .base .main-nav ul {
+        justify-content: flex-start;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 auto;
+        width: 90%; }
+      html body .base .main-nav li:first-child {
+        margin-left: 18px; }
+      html body .base .main-nav a {
+        padding: 1.25rem 0.5rem;
+        font-size: 1.5rem;
+        max-width: 140px;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start; }
+        html body .base .main-nav a:hover, html body .base .main-nav a:focus, html body .base .main-nav a.active {
+          background: rgba(199, 202, 195, 0.5); }
+      html body .base .main-nav span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #888;
+        margin: 0.25rem 0 0 0; }
+      html body .base .main-nav.outlines * {
+        outline: 1px solid rgba(255, 0, 0, 0.5); }
       html body .base section {
         border-bottom: solid 31px #C7CAC3;
         padding: 49px 0; }
