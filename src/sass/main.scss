@@ -257,33 +257,13 @@ html {
 	}
 
 	html {
-		body {
-			font-size: 90%;
-			
-			.base {
-				
-				header {
-					height: 205px;	
-					
-					.wrapper {
-						
-						#logo {
-							margin-left: calc(50% - 362px);
-						}
-					}
-				}
-			}	
-		}
-	}		
-}
-
-@media only screen and (max-width: 911px) {
-	html {
 		
 		body {
 
 			.base {
+
 				header {
+					height: 205px;
 					padding-bottom: 17px;
 
 					.wrapper {
@@ -314,32 +294,54 @@ html {
 		}
 	}
 } 
-@media only screen and (max-width: 735px) {
+
+@media only screen and (max-width: 768px) {
 	html {
 		
 		body {
 			font-size: 83%;	
 
-			header {
-				
-				.wrapper {
-				
-					#logo {
-						margin-left: calc(50% - 163px);
-					}
-				}
-			}
+			.base {
 
-			section {
-				padding: 17px 0 0 0;
+				header {
 				
-				.wrapper {
-				
-					#content {
-						width: 100%;
-						margin-left: 0;
+					.wrapper {
+					
+						#logo {
+							margin-left: calc(50% - 163px);
+						}
 					}
 				}
+
+				.main-nav {
+
+					li {
+						width: 100%;
+
+						&:first-child {
+							margin-left: 0;
+						}
+
+						a {
+							justify-content: center;
+							font-size: 1.25rem;
+							padding: 0.6rem 0rem;
+							max-width: 100%;
+						}
+					}
+				}
+
+				section {
+					padding: 17px 0 0 0;
+					
+					.wrapper {
+					
+						#content {
+							width: 100%;
+							margin-left: 0;
+						}
+					}
+				}	
 			}
 		}
 	}
